@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 html,
@@ -42,4 +43,24 @@ iframe {
     left: 23px;
     height: 469px;
     width: 265px;
+}
+
+section#icones_sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+section#icones_sociais img {
+    height: 60px;
+    border-radius: 50%;
+    margin: 15px 15px 0 0;
+    transition: 100ms ease-in-out;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+section#icones_sociais img:hover {
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
+    border: 2px solid #000;
+    transform: translate(-2px, -2px);
 }
