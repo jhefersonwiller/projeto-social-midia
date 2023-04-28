@@ -43,6 +43,7 @@ iframe {
     left: 23px;
     height: 469px;
     width: 265px;
+    border-radius: 2px;
 }
 
 section#icones_sociais {
@@ -63,4 +64,27 @@ section#icones_sociais img:hover {
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.6);
     border: 2px solid #000;
     transform: translate(-2px, -1px);
+}
+
+@media (max-width: 740px) {
+    section#celular {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-65%, -50%);
+        height: 544px;
+        width: 270px;
+        background: url(../img/frame-iphone-mquery.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    iframe {
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        height: 408px;
+        width: 231px;
+        border-radius: 2px;
+    }
 }
